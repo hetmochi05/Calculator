@@ -48,7 +48,7 @@ cd calculator
 
 Then open `index.html` in your browser — that's it.
 
-Or view it live on **GitHub Pages**: `https://yourusername.github.io/calculator`
+Or view it live on **GitHub Pages**: `https://hetmochi05.github.io/Calculator/`
 
 ---
 
