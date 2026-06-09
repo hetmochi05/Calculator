@@ -86,7 +86,7 @@ Or view it live on **GitHub Pages**: `https://yourusername.github.io/calculator`
 ## 🙋‍♂️ Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@hetmochi05](https://github.com/hetmochi05)
 
 ---
 
