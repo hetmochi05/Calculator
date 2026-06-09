@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <!-- ═══ SEO ═══ -->
+    <meta name="description" content="A sleek, responsive calculator with history, dark/light mode, keyboard support, and haptic feedback.">
+    <meta name="keywords" content="calculator, web calculator, simple calculator, dark mode calculator">
+    <meta name="author" content="Het Mochi">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" value="0" disabled>
+                <button class="history-btn" onclick="toggleHistory()">📜</button>
+            </div>
+            <div class="buttons">
+
+                <!-- row 1 --> <button class="action" onclick="clearDisplay()">C</button>
+                <button class="action" onclick="toggleSign()">+/-</button>
+                <button class="action" onclick="appendValue('%')">%</button>
+                <button class="operator" onclick="appendValue('/')">÷</button>
+
+                <!-- row 2 -->
+                <button class="number" onclick="appendValue('7')">7</button>
+                <button class="number" onclick="appendValue('8')">8</button>
+                <button class="number" onclick="appendValue('9')">9</button>
+                <button class="operator" onclick="appendValue('*')">×</button>
+
+                <!-- row 3 -->
+                <button class="number" onclick="appendValue('4')">4</button>
+                <button class="number" onclick="appendValue('5')">5</button>
+                <button class="number" onclick="appendValue('6')">6</button>
+                <button class="operator" onclick="appendValue('-')">−</button>
+
+                <!-- row 4 -->
+                <button class="number" onclick="appendValue('1')">1</button>
+                <button class="number" onclick="appendValue('2')">2</button>
+                <button class="number" onclick="appendValue('3')">3</button>
+                <button class="operator" onclick="appendValue('+')">+</button>
+
+                <!-- row 5 -->
+                <button class="action" onclick="deleteLast()">DEL</button>
+                <button class="zero" onclick="appendValue('0')">0</button>
+                <button class="number" onclick="appendValue('.')">.</button>
+                <button class="equal" onclick="calculate()">=</button>
+
+            </div>
+        </div>
+
+        <!--History Panel -->
+        <div id="historyPanel" class="history-panel">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+            <button class="history-clear-btn" onclick="clearHistory()">Clear</button>
+        </div>
+
+        <div class="sci-row">
+            <!-- future scientific buttons -->
+             
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
